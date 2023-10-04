@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=IBM+Plex+Serif:ital,wght@0,700;1,700&display=swap');
+
+.font-1 {
+    color: #0D0D0D;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.16px;
+    text-transform: lowercase;
+}
+
+.font-2 {
+    color: #0D0D0D;
+    font-family: 'IBM Plex Mono', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+}
+
+.font-3 {
+    color: #737373;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.08px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Conversor de texto</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="font-1">Conversor de texto</h1>
+
+        <textarea class="font-3" id="text-area" cols="1" rows="1" placeholder="Digite aqui seu texto"></textarea>
+
+        <div class="button-grid">
+            <button class="font-2" onclick="uppercase()">UPPERCASE</button>
+            <button class="font-2" onclick="lowercase()">lowercase</button>
+            <button class="font-2" onclick="capitalize()">Capitalize</button>
+            <button class="font-2" onclick="removeSpace()">Remover espaço</button>
+            <button id="copy" onclick="copy()"><img src="/img/copy-icon.svg" alt="Copiar para o clipboard"></button>
+        </div>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

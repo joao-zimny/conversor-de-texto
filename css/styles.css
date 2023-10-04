@@ -1,0 +1,107 @@
+@import "/css/reset.css";
+@import "/css/tipografia.css";
+
+.container {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    margin-top: 180px;
+}
+
+#text-area {
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+    padding: 24px;
+    border-radius: 8px;
+    border: 3px solid #212121;
+    background: #F2F2F2;
+    resize: none;
+    margin-top: 30px;
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+#text-area:focus {
+    outline: none;
+}
+
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.button-grid button {
+    height: 50px;
+    padding: 0px 24px;
+    border-radius: 8px;
+    border: 2px solid #212121;
+    background: #BFBFBF;
+    cursor: pointer;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button-grid button:hover {
+    background: #9B9B9B;
+}
+
+@media (max-width: 1216px) {
+    .container {
+        max-width: 1000px;
+    }
+} 
+
+@media (max-width: 1040px) {
+    .container {
+        max-width: 800px;
+    }
+    .container h1 {
+        margin-top: 80px;
+    }
+    .button-grid {
+        justify-content: flex-start;
+    }
+} 
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 600px;
+    }
+    .container h1 {
+        margin-top: 60px;
+    }
+    .button-grid {
+        justify-content: flex-start;
+    }
+} 
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 400px;
+    }
+    .button-grid {
+        justify-content: flex-start;
+    }
+} 
+
+@media (max-width: 420px) {
+    .container {
+        max-width: 300px;
+    }
+    .container h1 {
+        margin-top: 20px;
+    }
+
+    #text-area {
+        height: 200px;
+    }
+    .button-grid {
+        justify-content: flex-start;
+    }
+} 
