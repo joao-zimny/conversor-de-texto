@@ -32,12 +32,17 @@
 
 .button-grid {
     display: flex;
+    justify-content: space-between;
+}
+
+.utilities-grid {
+    display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
     gap: 20px;
 }
 
-.button-grid button {
+.utilities-grid button {
     height: 50px;
     padding: 0px 24px;
     border-radius: 8px;
@@ -47,7 +52,28 @@
     box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
-.button-grid button:hover {
+.utilities-grid button:hover {
+    background: #9B9B9B;
+}
+
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.tools-grid button {
+    height: 50px;
+    padding: 0px 24px;
+    border-radius: 8px;
+    border: 2px solid #212121;
+    background: #FFF;
+    cursor: pointer;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tools-grid button:hover {
     background: #9B9B9B;
 }
 
@@ -64,7 +90,7 @@
     .container h1 {
         margin-top: 80px;
     }
-    .button-grid {
+    .utilities-grid {
         justify-content: flex-start;
     }
 } 
@@ -76,7 +102,7 @@
     .container h1 {
         margin-top: 60px;
     }
-    .button-grid {
+    .utilities-grid {
         justify-content: flex-start;
     }
 } 
@@ -85,7 +111,7 @@
     .container {
         max-width: 400px;
     }
-    .button-grid {
+    .utilities-grid {
         justify-content: flex-start;
     }
 } 
@@ -101,7 +127,7 @@
     #text-area {
         height: 200px;
     }
-    .button-grid {
+    .utilities-grid {
         justify-content: flex-start;
     }
 } 
