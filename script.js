@@ -14,7 +14,7 @@ function lowercase() {
 function capitalize() {
     temp.push(element.value);
     const words = element.value.split(' ');
-    const capitalize = words.map(function(word) {
+    const capitalize = words.map(function (word) {
         return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     });
     element.value = capitalize.join(' ');
@@ -27,9 +27,10 @@ function removeSpace() {
 }
 
 function undo() {
-    const ult = temp[temp.length - 1];
-    element.value = ult;
-    console.log(ult);
+    if (temp.length > 0) {
+        const ult = temp[temp.length - 1];
+        element.value = ult;
+    }
 }
 
 function clean() {
